@@ -58,6 +58,10 @@ Both datasets are loaded directly from **Hugging Face** using the `datasets` lib
 4. Save multiple checkpoints during training  
 5. Evaluate checkpoints on test set and select the best model  
 
+## 📊 Output Image
+  ![Image]( https://github.com/user-attachments/assets/7c00ad3c-7322-4616-a51b-a2deca7a0408)
+
+
 ## 📌 Notes
 - Both trainings start **from the same base model**
 - Only LoRA parameters are updated (base model frozen)
