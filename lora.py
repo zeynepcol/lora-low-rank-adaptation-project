@@ -1,7 +1,6 @@
 import os
 os.environ["TRANSFORMERS_NO_TF"] = "1"
 
-
 import os
 import torch
 from datasets import load_dataset
@@ -35,7 +34,7 @@ GRAD_ACC = 8
 SEED = 42
 
 # =========================
-# 1️⃣ BASELINE INFERENCE
+# BASELINE INFERENCE
 # =========================
 
 def baseline_inference():
@@ -61,7 +60,7 @@ Write a Python function to check if a number is prime.
 
 
 # =========================
-# 2️⃣ LOAD DATASET
+# LOAD DATASET
 # =========================
 
 def load_codegen_dataset():
@@ -80,9 +79,8 @@ def load_codegen_dataset():
         "test": split_2["test"]
     }
 
-
 # =========================
-# 3️⃣ TOKENIZATION (solution-only)
+# TOKENIZATION (solution-only)
 # =========================
 
 def preprocess(example):
@@ -106,7 +104,7 @@ Solution:
 
 
 # =========================
-# 4️⃣ TRAINING
+# TRAINING
 # =========================
 
 def train_lora(dataset):
@@ -171,7 +169,7 @@ def train_lora(dataset):
 
 
 # =========================
-# 5️⃣ CHECKPOINT EVALUATION
+# CHECKPOINT EVALUATION
 # =========================
 
 def evaluate_checkpoints(test_dataset):
